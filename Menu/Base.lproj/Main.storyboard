@@ -128,11 +128,11 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopDishesTableViewCell" rowHeight="200" id="Jo5-SG-UR7" customClass="TopDishesTableViewCell" customModule="Menu" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="238" width="414" height="200"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopDishesTableViewCell" rowHeight="236" id="Jo5-SG-UR7" customClass="TopDishesTableViewCell" customModule="Menu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="238" width="414" height="236"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jo5-SG-UR7" id="AgB-ts-rxv">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRK-Zu-RHA">
@@ -169,7 +169,7 @@
                                             </constraints>
                                         </view>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TsL-ca-iw6">
-                                            <rect key="frame" x="20" y="53" width="240" height="136"/>
+                                            <rect key="frame" x="20" y="53" width="240" height="172"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wev-jm-sx7">
                                                 <size key="itemSize" width="128" height="128"/>
@@ -179,21 +179,21 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopDishesCollectionViewCell" id="UAW-HE-arQ" customClass="TopDishesCollectionViewCell" customModule="Menu" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="4" width="80" height="128"/>
+                                                    <rect key="frame" x="0.0" y="24" width="80" height="124.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fw7-ab-GTN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="128"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="124.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top1" translatesAutoresizingMaskIntoConstraints="NO" id="Zp6-2D-q0X">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news1" translatesAutoresizingMaskIntoConstraints="NO" id="Zp6-2D-q0X">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="100" id="xM6-QG-c29"/>
                                                                     <constraint firstAttribute="width" constant="80" id="z8b-qa-Bi7"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY3-t7-Dkn">
-                                                                <rect key="frame" x="0.0" y="107" width="80" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY3-t7-Dkn">
+                                                                <rect key="frame" x="0.0" y="104" width="80" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -204,13 +204,14 @@
                                                             <constraint firstItem="Zp6-2D-q0X" firstAttribute="top" secondItem="fw7-ab-GTN" secondAttribute="top" id="Ne3-ad-FcS"/>
                                                             <constraint firstAttribute="bottom" secondItem="MY3-t7-Dkn" secondAttribute="bottom" id="XTn-MI-I3S"/>
                                                             <constraint firstAttribute="trailing" secondItem="MY3-t7-Dkn" secondAttribute="trailing" id="h5c-qD-9c9"/>
+                                                            <constraint firstItem="MY3-t7-Dkn" firstAttribute="top" secondItem="Zp6-2D-q0X" secondAttribute="bottom" constant="4" id="tFi-cd-DF3"/>
                                                             <constraint firstItem="MY3-t7-Dkn" firstAttribute="leading" secondItem="fw7-ab-GTN" secondAttribute="leading" id="uL1-Df-5pt"/>
                                                             <constraint firstItem="Zp6-2D-q0X" firstAttribute="leading" secondItem="fw7-ab-GTN" secondAttribute="leading" id="vXF-Uj-hMg"/>
                                                         </constraints>
                                                     </collectionViewCellContentView>
                                                     <connections>
-                                                        <outlet property="topDishImageView" destination="Zp6-2D-q0X" id="QrQ-fn-7qU"/>
-                                                        <outlet property="topDishNameLabel" destination="MY3-t7-Dkn" id="9L2-Ud-wlC"/>
+                                                        <outlet property="dishImage" destination="Zp6-2D-q0X" id="u8B-dt-LtK"/>
+                                                        <outlet property="dishName" destination="MY3-t7-Dkn" id="uKK-Es-IWd"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
@@ -227,12 +228,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="collectionView" destination="TsL-ca-iw6" id="S81-BM-3LO"/>
                                     <outlet property="titleLabel" destination="0FT-Sh-SEz" id="azq-rW-eov"/>
-                                    <outlet property="topDishesCollectionView" destination="TsL-ca-iw6" id="S81-BM-3LO"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="200" id="e0Q-Q3-kG8" customClass="NewsTableViewCell" customModule="Menu" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="438" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="474" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0Q-Q3-kG8" id="QTi-rK-cQa">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -324,7 +325,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPk-7P-oxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="868"/>
+            <point key="canvasLocation" x="118.84057971014494" y="867.85714285714278"/>
         </scene>
         <!--Локация-->
         <scene sceneID="1kT-cV-YJB">
@@ -548,7 +549,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Показать на карте"/>
                                                 <connections>
-                                                    <segue destination="5Ow-Nu-xxR" kind="show" id="MeB-49-sRz"/>
+                                                    <segue destination="5Ow-Nu-xxR" kind="show" identifier="infoToMap" id="MeB-49-sRz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAf-Ew-Ym8">
@@ -631,7 +632,6 @@
         <!--Navigation Controller-->
         <scene sceneID="yjG-pS-bCt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BSw-3G-YWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Rtk-QM-Y6y" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SrJ-RK-EKM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -641,6 +641,7 @@
                         <segue destination="tf8-RR-fNS" kind="relationship" relationship="rootViewController" id="crF-DZ-lVv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSw-3G-YWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="996" y="88"/>
         </scene>
@@ -662,11 +663,11 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fcD-9Y-eHs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kNo-ge-Knp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tf8-RR-fNS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="IRb-L3-Dli"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yry-rz-No1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -677,6 +678,7 @@
                         <segue destination="ugi-zI-mPj" kind="relationship" relationship="viewControllers" id="OFk-Sx-OYu"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNo-ge-Knp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1851" y="88"/>
         </scene>
@@ -690,7 +692,6 @@
         <image name="menu" width="19" height="17"/>
         <image name="news1" width="1415" height="512"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="top1" width="349" height="512"/>
         <image name="корзина" width="20" height="17"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

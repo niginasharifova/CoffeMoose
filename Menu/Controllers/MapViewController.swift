@@ -28,16 +28,6 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCafesOnMap(cafes)
-        
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 38.56868260794275, longitude: 68.79271452418091)
-        annotation.title = "Coffee Moose Душанбе"
-        mapView.addAnnotation(annotation)
-
-        
-
-        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
-        mapView.setRegion(region, animated: true)
     }
     
         func fetchCafesOnMap(_ cafes: [Cafe]) {
@@ -46,6 +36,8 @@ class MapViewController: UIViewController {
             annotations.title = cafe.name
             annotations.coordinate = CLLocationCoordinate2D(latitude: cafe.latitude, longitude: cafe.longtitude)
             mapView.addAnnotation(annotations)
+            let region = MKCoordinateRegion(center: annotations.coordinate, latitudinalMeters: 2000, longitudinalMeters: 2000)
+            mapView.setRegion(region, animated: true)
         }
     }
     @IBAction func didTapCallButton(_ sender: Any) {

@@ -19,7 +19,9 @@ class MainTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 138
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -39,8 +41,6 @@ class MainTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
             cell.newsLabel.text = "Лента новостей"
             return cell
-//            cell.newsCollectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as! NewsCollectionViewCell
-            
         }
-    }
+}
 }

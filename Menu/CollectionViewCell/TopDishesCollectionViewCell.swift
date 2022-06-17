@@ -9,6 +9,6 @@ import UIKit
 
 class TopDishesCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var topDishNameLabel: UILabel!
-    @IBOutlet weak var topDishImageView: UIImageView!
+    @IBOutlet weak var dishImage: UIImageView!
+    @IBOutlet weak var dishName: UILabel!
 }

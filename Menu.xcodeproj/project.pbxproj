@@ -135,8 +135,8 @@
 				C0AABD5C28549FB2000ABD3D /* MenuViewController.swift */,
 				C0AABDAD2854E78B000ABD3D /* MenuItemTableViewController.swift */,
 				C03DFCB1285517FD00F97010 /* CartTableViewController.swift */,
-				C03DFCCA2855323400F97010 /* MapViewController.swift */,
 				C03DFCD12855586400F97010 /* InfoViewController.swift */,
+				C03DFCCA2855323400F97010 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
