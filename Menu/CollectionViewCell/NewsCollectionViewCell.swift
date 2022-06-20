@@ -10,4 +10,5 @@ import UIKit
 class NewsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var newsImageView: UIImageView!
+    @IBOutlet weak var newsLabel: UILabel!
 }

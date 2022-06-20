@@ -10,7 +10,7 @@ import UIKit
 class MenuItemTableViewController: UITableViewController {
         
     var category: CategoryI?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,11 +34,13 @@ class MenuItemTableViewController: UITableViewController {
         }
         return cell
     }
-    @IBAction func didTapAddToCartButton(_ sender: Any) {
-        // Get the current product id
-//        let productId = category
-        // Add the product to the cart
+    
+    @IBAction func didTapAddButton(_ sender: Any) {
+        let newItem = Item(itemName: "kkk", itemPrice: "dhhdj")
+        let object: Item = newItem
+        NotificationCenter.default.post(name: .itemHasBeenAdded, object: object)
         
-        // Display a message that the product has ben added
+        print(object)
     }
 }
+

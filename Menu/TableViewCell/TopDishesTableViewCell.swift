@@ -16,9 +16,11 @@ class TopDishesTableViewCell: UITableViewCell {
     
     
     var topDishes: [TopDish] = [
-        TopDish(dishName: "Сэндвич клаб с курицей", dishImage: "top1"),
+        TopDish(dishName: "Сэндвич клаб", dishImage: "top1"),
         TopDish(dishName: "Сырный крем суп", dishImage: "top2"),
-        TopDish(dishName: "Салат Цезарь", dishImage: "top3")]
+        TopDish(dishName: "Салат Цезарь", dishImage: "top3"),
+        TopDish(dishName: "Жульен на булочке", dishImage: "top4"),
+        TopDish(dishName: "Греческий салат", dishImage: "top5")]
     
 
     override func awakeFromNib() {
@@ -36,20 +38,19 @@ class TopDishesTableViewCell: UITableViewCell {
 extension TopDishesTableViewCell:
     UICollectionViewDelegate,
     UICollectionViewDataSource {
-func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return topDishes.count
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return topDishes.count
 }
 
-func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopDishesCollectionViewCell", for: indexPath) as! TopDishesCollectionViewCell
-    let topDish = topDishes[indexPath.row]
-    cell.dishImage.image = UIImage(named: topDish.dishImage)
-    cell.dishName.text = topDish.dishName
-    return cell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopDishesCollectionViewCell", for: indexPath) as! TopDishesCollectionViewCell
+        let topDish = topDishes[indexPath.row]
+        cell.dishImage.image = UIImage(named: topDish.dishImage)
+        cell.dishImage.layer.cornerRadius = 15
+        cell.dishName.text = topDish.dishName
+        return cell
+}
 }
 
 
-func didTapAllButton(_ sender: Any) {
-    }
-
-}

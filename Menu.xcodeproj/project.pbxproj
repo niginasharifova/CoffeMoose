@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C03BE7F9285A6CCD004EAFFC /* TopDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE7F8285A6CCD004EAFFC /* TopDish.swift */; };
+		C03BE807285E6331004EAFFC /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE806285E6331004EAFFC /* News.swift */; };
+		C03BE80B285E82AC004EAFFC /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE80A285E82AC004EAFFC /* Notification.swift */; };
+		C03BE80E285E9328004EAFFC /* TopDishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE80D285E9328004EAFFC /* TopDishesTableViewController.swift */; };
+		C03BE811285F1C95004EAFFC /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE810285F1C95004EAFFC /* TopTableViewCell.swift */; };
+		C03BE858285F9BA9004EAFFC /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE857285F9BA9004EAFFC /* GamesViewController.swift */; };
 		C03DFCAD28550A4C00F97010 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DFCAC28550A4C00F97010 /* CategoryItems.swift */; };
 		C03DFCB2285517FD00F97010 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DFCB1285517FD00F97010 /* CartTableViewController.swift */; };
 		C03DFCB8285519BD00F97010 /* TopDishesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DFCB7285519BD00F97010 /* TopDishesTableViewCell.swift */; };
@@ -31,6 +36,11 @@
 
 /* Begin PBXFileReference section */
 		C03BE7F8285A6CCD004EAFFC /* TopDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDish.swift; sourceTree = "<group>"; };
+		C03BE806285E6331004EAFFC /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		C03BE80A285E82AC004EAFFC /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		C03BE80D285E9328004EAFFC /* TopDishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDishesTableViewController.swift; sourceTree = "<group>"; };
+		C03BE810285F1C95004EAFFC /* TopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
+		C03BE857285F9BA9004EAFFC /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		C03DFCAC28550A4C00F97010 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
 		C03DFCB1285517FD00F97010 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		C03DFCB7285519BD00F97010 /* TopDishesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDishesTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03BE809285E8292004EAFFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C03BE80A285E82AC004EAFFC /* Notification.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C03DFCC22855295900F97010 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +98,7 @@
 				C03DFCAC28550A4C00F97010 /* CategoryItems.swift */,
 				C0AABD9E2854D89C000ABD3D /* Category.swift */,
 				C03BE7F8285A6CCD004EAFFC /* TopDish.swift */,
+				C03BE806285E6331004EAFFC /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +122,7 @@
 		C0AABD5728549FB2000ABD3D /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				C03BE809285E8292004EAFFC /* Extensions */,
 				C03DFCC22855295900F97010 /* CollectionViewCell */,
 				C0AABD742854A4A3000ABD3D /* TableViewCell */,
 				C0AABD5828549FB2000ABD3D /* AppDelegate.swift */,
@@ -121,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C03DFCB7285519BD00F97010 /* TopDishesTableViewCell.swift */,
+				C03BE810285F1C95004EAFFC /* TopTableViewCell.swift */,
 				C03DFCBA285519CE00F97010 /* NewsTableViewCell.swift */,
 				C0AABD712854A301000ABD3D /* TableViewCell.swift */,
 				C0AABDB62854E839000ABD3D /* MenuItemTableViewCell.swift */,
@@ -134,9 +155,11 @@
 				C0AABDA92854E56A000ABD3D /* MainTableViewController.swift */,
 				C0AABD5C28549FB2000ABD3D /* MenuViewController.swift */,
 				C0AABDAD2854E78B000ABD3D /* MenuItemTableViewController.swift */,
-				C03DFCB1285517FD00F97010 /* CartTableViewController.swift */,
 				C03DFCD12855586400F97010 /* InfoViewController.swift */,
 				C03DFCCA2855323400F97010 /* MapViewController.swift */,
+				C03BE80D285E9328004EAFFC /* TopDishesTableViewController.swift */,
+				C03DFCB1285517FD00F97010 /* CartTableViewController.swift */,
+				C03BE857285F9BA9004EAFFC /* GamesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,16 +241,21 @@
 				C03DFCC82855299F00F97010 /* NewsCollectionViewCell.swift in Sources */,
 				C03DFCBB285519CE00F97010 /* NewsTableViewCell.swift in Sources */,
 				C0AABD722854A301000ABD3D /* TableViewCell.swift in Sources */,
+				C03BE80E285E9328004EAFFC /* TopDishesTableViewController.swift in Sources */,
 				C0AABDB72854E839000ABD3D /* MenuItemTableViewCell.swift in Sources */,
 				C03DFCD22855586400F97010 /* InfoViewController.swift in Sources */,
 				C0AABD5928549FB2000ABD3D /* AppDelegate.swift in Sources */,
 				C0AABD5B28549FB2000ABD3D /* SceneDelegate.swift in Sources */,
 				C0AABDAE2854E78B000ABD3D /* MenuItemTableViewController.swift in Sources */,
+				C03BE80B285E82AC004EAFFC /* Notification.swift in Sources */,
+				C03BE807285E6331004EAFFC /* News.swift in Sources */,
 				C03DFCB8285519BD00F97010 /* TopDishesTableViewCell.swift in Sources */,
 				C0AABD9F2854D89C000ABD3D /* Category.swift in Sources */,
 				C0AABDAA2854E56A000ABD3D /* MainTableViewController.swift in Sources */,
+				C03BE858285F9BA9004EAFFC /* GamesViewController.swift in Sources */,
 				C03DFCCB2855323400F97010 /* MapViewController.swift in Sources */,
 				C03BE7F9285A6CCD004EAFFC /* TopDish.swift in Sources */,
+				C03BE811285F1C95004EAFFC /* TopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

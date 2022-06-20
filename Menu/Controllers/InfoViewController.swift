@@ -14,8 +14,9 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func didTapCallButton(_ sender: Any) {
-    }
+    @IBAction func didTallCall(_ sender: Any) {
+        if let url = URL(string: "tel://444602121") {
+            UIApplication.shared.open(url) } }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MenuToMenuItem" {
@@ -24,3 +25,4 @@ class InfoViewController: UIViewController {
         }
     }
 }
+

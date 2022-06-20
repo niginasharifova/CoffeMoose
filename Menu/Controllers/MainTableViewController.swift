@@ -9,18 +9,14 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
-    var topDishes: [TopDish] = [
-        TopDish(dishName: "first", dishImage: "banner"),
-        TopDish(dishName: "second", dishImage: "second")]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 138
+        return 250
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

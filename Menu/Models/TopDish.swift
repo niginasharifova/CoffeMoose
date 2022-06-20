@@ -6,7 +6,10 @@
 //
 
 import Foundation
+
 struct TopDish {
     var dishName: String
     var dishImage: String
+    var dishPrice: String?
+    var dishRating: String?
 }
