@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "mid-shot-chef-holding-plate-with-pasta-and-making-ok-sign.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

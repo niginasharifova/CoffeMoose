@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03BC0DD2860ECA70040079A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC0DC2860ECA70040079A /* OnboardingViewController.swift */; };
+		C03BC0E12860F0910040079A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC0E02860F0910040079A /* UIViewExtension.swift */; };
+		C03BC0E42860F18F0040079A /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC0E32860F18F0040079A /* OnboardingSlide.swift */; };
+		C03BC0EC2860F4B30040079A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC0EB2860F4B30040079A /* OnboardingCollectionViewCell.swift */; };
 		C03BE7F9285A6CCD004EAFFC /* TopDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE7F8285A6CCD004EAFFC /* TopDish.swift */; };
 		C03BE807285E6331004EAFFC /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE806285E6331004EAFFC /* News.swift */; };
 		C03BE80B285E82AC004EAFFC /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE80A285E82AC004EAFFC /* Notification.swift */; };
 		C03BE80E285E9328004EAFFC /* TopDishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE80D285E9328004EAFFC /* TopDishesTableViewController.swift */; };
 		C03BE811285F1C95004EAFFC /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE810285F1C95004EAFFC /* TopTableViewCell.swift */; };
-		C03BE858285F9BA9004EAFFC /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE857285F9BA9004EAFFC /* GamesViewController.swift */; };
 		C03DFCAD28550A4C00F97010 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DFCAC28550A4C00F97010 /* CategoryItems.swift */; };
 		C03DFCB2285517FD00F97010 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DFCB1285517FD00F97010 /* CartTableViewController.swift */; };
 		C03DFCB8285519BD00F97010 /* TopDishesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DFCB7285519BD00F97010 /* TopDishesTableViewCell.swift */; };
@@ -35,12 +38,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C03BC0DC2860ECA70040079A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C03BC0E02860F0910040079A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C03BC0E32860F18F0040079A /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		C03BC0EB2860F4B30040079A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C03BE7F8285A6CCD004EAFFC /* TopDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDish.swift; sourceTree = "<group>"; };
 		C03BE806285E6331004EAFFC /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		C03BE80A285E82AC004EAFFC /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		C03BE80D285E9328004EAFFC /* TopDishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDishesTableViewController.swift; sourceTree = "<group>"; };
 		C03BE810285F1C95004EAFFC /* TopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
-		C03BE857285F9BA9004EAFFC /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		C03DFCAC28550A4C00F97010 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
 		C03DFCB1285517FD00F97010 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		C03DFCB7285519BD00F97010 /* TopDishesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDishesTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,10 +81,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03BC0D92860EC380040079A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C03BC0DB2860EC860040079A /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C03BC0DA2860EC540040079A /* OB Models */ = {
+			isa = PBXGroup;
+			children = (
+				C03BC0E32860F18F0040079A /* OnboardingSlide.swift */,
+			);
+			path = "OB Models";
+			sourceTree = "<group>";
+		};
+		C03BC0DB2860EC860040079A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C03BC0DC2860ECA70040079A /* OnboardingViewController.swift */,
+				C03BC0EB2860F4B30040079A /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		C03BE809285E8292004EAFFC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				C03BE80A285E82AC004EAFFC /* Notification.swift */,
+				C03BC0E02860F0910040079A /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,13 +154,15 @@
 		C0AABD5728549FB2000ABD3D /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				C03BC0D92860EC380040079A /* Views */,
+				C03BC0DA2860EC540040079A /* OB Models */,
 				C03BE809285E8292004EAFFC /* Extensions */,
 				C03DFCC22855295900F97010 /* CollectionViewCell */,
 				C0AABD742854A4A3000ABD3D /* TableViewCell */,
-				C0AABD5828549FB2000ABD3D /* AppDelegate.swift */,
-				C0AABD5A28549FB2000ABD3D /* SceneDelegate.swift */,
 				C03DFCCF285542A800F97010 /* Models */,
 				C0AABDA42854DEA0000ABD3D /* Controllers */,
+				C0AABD5828549FB2000ABD3D /* AppDelegate.swift */,
+				C0AABD5A28549FB2000ABD3D /* SceneDelegate.swift */,
 				C0AABD5E28549FB2000ABD3D /* Main.storyboard */,
 				C0AABD6128549FB5000ABD3D /* Assets.xcassets */,
 				C0AABD6328549FB5000ABD3D /* LaunchScreen.storyboard */,
@@ -159,7 +193,6 @@
 				C03DFCCA2855323400F97010 /* MapViewController.swift */,
 				C03BE80D285E9328004EAFFC /* TopDishesTableViewController.swift */,
 				C03DFCB1285517FD00F97010 /* CartTableViewController.swift */,
-				C03BE857285F9BA9004EAFFC /* GamesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,12 +271,15 @@
 				C03DFCAD28550A4C00F97010 /* CategoryItems.swift in Sources */,
 				C03DFCB2285517FD00F97010 /* CartTableViewController.swift in Sources */,
 				C0AABD5D28549FB2000ABD3D /* MenuViewController.swift in Sources */,
+				C03BC0E42860F18F0040079A /* OnboardingSlide.swift in Sources */,
+				C03BC0DD2860ECA70040079A /* OnboardingViewController.swift in Sources */,
 				C03DFCC82855299F00F97010 /* NewsCollectionViewCell.swift in Sources */,
 				C03DFCBB285519CE00F97010 /* NewsTableViewCell.swift in Sources */,
 				C0AABD722854A301000ABD3D /* TableViewCell.swift in Sources */,
 				C03BE80E285E9328004EAFFC /* TopDishesTableViewController.swift in Sources */,
 				C0AABDB72854E839000ABD3D /* MenuItemTableViewCell.swift in Sources */,
 				C03DFCD22855586400F97010 /* InfoViewController.swift in Sources */,
+				C03BC0EC2860F4B30040079A /* OnboardingCollectionViewCell.swift in Sources */,
 				C0AABD5928549FB2000ABD3D /* AppDelegate.swift in Sources */,
 				C0AABD5B28549FB2000ABD3D /* SceneDelegate.swift in Sources */,
 				C0AABDAE2854E78B000ABD3D /* MenuItemTableViewController.swift in Sources */,
@@ -252,7 +288,7 @@
 				C03DFCB8285519BD00F97010 /* TopDishesTableViewCell.swift in Sources */,
 				C0AABD9F2854D89C000ABD3D /* Category.swift in Sources */,
 				C0AABDAA2854E56A000ABD3D /* MainTableViewController.swift in Sources */,
-				C03BE858285F9BA9004EAFFC /* GamesViewController.swift in Sources */,
+				C03BC0E12860F0910040079A /* UIViewExtension.swift in Sources */,
 				C03DFCCB2855323400F97010 /* MapViewController.swift in Sources */,
 				C03BE7F9285A6CCD004EAFFC /* TopDish.swift in Sources */,
 				C03BE811285F1C95004EAFFC /* TopTableViewCell.swift in Sources */,

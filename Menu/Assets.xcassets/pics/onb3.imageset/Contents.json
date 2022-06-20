@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "front-view-male-courier-in-blue-uniform-holding-little-food-package-on-a-yellow-virus-pandemic-covid-delivery-work-service-job-bike.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

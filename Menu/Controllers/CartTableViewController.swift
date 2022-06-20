@@ -10,7 +10,7 @@ import UIKit
 var cartItems: [String] = ["asd", "asdas"]
 
 class CartTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateCart()
