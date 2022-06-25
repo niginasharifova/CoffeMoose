@@ -9,5 +9,7 @@ import Foundation
 
 struct Item {
     var itemName: String
-    var itemPrice: String
+    var itemPrice: Int
     }
+
+var cartItems: [Item] = []

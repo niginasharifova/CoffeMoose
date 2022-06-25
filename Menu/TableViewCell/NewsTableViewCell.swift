@@ -7,13 +7,17 @@
 
 import UIKit
 
+var news: [News] = [
+    News(newsImage: "news", newsText: "С 1-го июля доступны ЗОЖ блюда", descriptions: [NewsDescription(image: "b", title: "nn", text: "nn")]),
+    News(newsImage: "news2", newsText: "10% СКИДКА НА ВСЕ БЛЮДА И НАПИТКИ", descriptions: [NewsDescription(image: "kk", title: "ttttt", text: "sslslslsl")])]
+
 class NewsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var newsLabel: UILabel!
         
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var news: [News] = [News(newsImage: "news1", newsText: "С первого числа доступны ЗОЖ блюда")]
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,7 +42,6 @@ extension NewsTableViewCell:
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as! NewsCollectionViewCell
         let new = news[indexPath.row]
         cell.newsImageView.image = UIImage(named: new.newsImage)
-        cell.newsImageView.layer.cornerRadius = 15
         cell.newsLabel.text = new.newsText
         return cell
     }

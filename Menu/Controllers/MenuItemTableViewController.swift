@@ -30,17 +30,17 @@ class MenuItemTableViewController: UITableViewController {
         if let category = category {
             let item: Item = category.categoryItems[indexPath.row]
             cell.itemNameLabel.text = item.itemName
-            cell.itemPriceLabel.text = item.itemPrice
+            cell.itemPriceLabel.text = String(item.itemPrice)
+            cell.item = item
         }
         return cell
     }
     
-    @IBAction func didTapAddButton(_ sender: Any) {
-        let newItem = Item(itemName: "kkk", itemPrice: "dhhdj")
-        let object: Item = newItem
-        NotificationCenter.default.post(name: .itemHasBeenAdded, object: object)
-        
-        print(object)
-    }
+//    @IBAction func didTapAddButton(_ sender: Any) {
+////        cartItems.append()
+//        NotificationCenter.default.post(name: .itemHasBeenAdded, object: nil)
+//
+//        print("")
+//    }
 }
 

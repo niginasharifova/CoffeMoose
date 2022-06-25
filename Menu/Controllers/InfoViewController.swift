@@ -12,6 +12,8 @@ class InfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "О нас"
+
     }
     
     @IBAction func didTallCall(_ sender: Any) {

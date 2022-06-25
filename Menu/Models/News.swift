@@ -9,4 +9,7 @@ import Foundation
 struct News {
     var newsImage: String
     var newsText: String
+    var descriptions: [NewsDescription]
 }
+
+

@@ -11,7 +11,7 @@ class MainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Главная"
     }
 
     // MARK: - Table view data source
@@ -38,5 +38,5 @@ class MainTableViewController: UITableViewController {
             cell.newsLabel.text = "Лента новостей"
             return cell
         }
-}
+    }
 }
